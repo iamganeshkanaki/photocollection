@@ -1,0 +1,103 @@
+.container {
+    position: absolute;
+    top: 90px;
+    left: 35%;
+    margin-top: 435px;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    border: 1.4px solid #afafaf;
+    border-radius: 0 0 5px 5px; 
+    background-color: #f7f7f7;
+}
+
+.top-border{
+    margin-top: 60.4px;
+    margin-left: 448px;
+    width: 400px;
+    height: 30px;
+    border-radius: 50px 50px 0  0;
+    background-color:#96c0ed;
+    /* border: 1.4px solid #afafaf; */
+}
+
+.mlogo {
+    width: 200px;
+    /* Adjust according to your logo size */
+    height: 200px;
+}
+
+.signin-form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    /* Remove default focus outline */
+    border: 1px solid #000;
+    text-align: center;
+    /* Hide border when focused */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {    
+    width: 70%;
+    height: 35px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input::placeholder{
+    text-align: center;
+}
+button {
+    width: 100px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-link {
+    margin-top: 20px;
+}
+
+.title {
+    margin-top: -30px;
+    color: #007bff;
+}
+
+@media screen and (max-width: 600px) {
+    .mlogo {
+        margin-left: 50px;
+        width: 250px;
+    }
+
+    .container {
+        margin-left: -105px;
+        margin-top: 70px;
+        width: 80%;
+        height: 65vh;
+        overflow: hidden;
+        background-color: #f7f7f7;
+    }
+    .top-border{
+        width: 330.5px;
+        margin-top: 130.4px;
+        margin-left: 39px;
+        background-color: #96c0ed;
+    }
+}
+
