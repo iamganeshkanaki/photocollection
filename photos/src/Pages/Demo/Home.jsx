@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './ParallaxWebsite.css';
 import mount1 from "../../Static/Images/mount1.png";
+import imgm from "../../Static/Images/IMGM.png";
 import mount2 from "../../Static/Images/mount2.png";
 import leaf1 from "../../Static/Images/leaf1.png";
 import leaf2 from "../../Static/Images/leaf2.png";
@@ -61,7 +62,7 @@ const Home = () => {
 
             <section className="home">
                 <img src={mount2} alt="mount2" className="mount2" />
-                <img src={mount1} alt="mount1" className="mount1" />
+                <img src={imgm} alt="mount1" className="mount1" />
                 <img src={bush2} alt="bush2" className="bush2" />
 
                 <h1 className="title">Photos</h1>
