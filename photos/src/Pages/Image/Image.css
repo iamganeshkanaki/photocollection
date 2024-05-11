@@ -1,0 +1,78 @@
+.upload-container {
+    max-width: 600px;
+    height: 400px;
+    margin-left: 425px;
+    /* margin: 0 auto; */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 0 0 5px 5px;
+    background-color: #F7F7F7;
+
+}
+
+.upload-container h2 {
+    margin-left: 35px;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.ulbl {
+    position: absolute;
+    padding: 10px;
+    top: 300px;
+    left: 550px;
+    border-radius: 4px;
+    color: #007BFF;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    -webkit-box-shadow: 2px 8px 19px 4px rgba(133, 135, 134, 1);
+    -moz-box-shadow: 2px 8px 19px 4px rgba(133, 135, 134, 1);
+    box-shadow: 2px 8px 19px 4px rgba(133, 135, 134, 1);
+
+}
+
+.upload-button {
+    display: block;
+    margin-top: 250px;
+    margin-left: 400px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cap {
+    margin-top: 150px;
+    margin-left: 425px;
+    width: 600px;
+    border-radius: 50px 50px 0 0;
+    height: 30px;
+    background-color: #96C0ED;
+}
+
+@media screen and (max-width: 600px) {
+    .upload-container {
+        height: 500px;
+        width: 94%;
+        margin-left: 13px;
+    }
+
+    .cap {
+        width: 94%;
+        margin-left: 13px;
+    }
+
+    .ulbl {
+        top: 350px;
+        left: 100px;
+    }
+
+    .upload-button {
+        margin-top: 300px;
+        margin-left: 200px;
+    }
+}
