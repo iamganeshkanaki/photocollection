@@ -1,10 +1,11 @@
 const express = require("express");
 const app = express();
+const cors = require("cors");
 const port = 12345;
 const multer = require('multer');
 const mongoose = require('mongoose');
 const fs = require('fs');
-
+app.use(cors());
 // Set up multer for handling file uploads
 const upload = multer({ dest: 'uploads/' });
 app.get("/", (req, res) => {
@@ -42,7 +43,16 @@ app.post('/upload', upload.single('image'), async (req, res) => {
     } catch (err) {
         console.error(err);
         res.status(500).send('Error uploading image.');
-    }    
+    }
+});
+
+app.post("/photos", (req, res) => {
+    Image.find().then((images) => {
+        console.log(`Called@`);
+        res.json({ images });
+    }).catch((err) => {
+        res.status(500).json({ error: err.message });
+    });
 });
 
 
